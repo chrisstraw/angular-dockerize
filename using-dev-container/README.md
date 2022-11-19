@@ -7,6 +7,7 @@ select extension -> gear -> Add to devcontainer.json
 
 
 Changed angular.json
+
 _original_
 
 ```json
@@ -26,6 +27,7 @@ _original_
 
 1. You can get conflicts running multiple Angular apps, so I always change the default port from 4200.
 2. poll is to refresh within the devcontainer
+
    _updated_
 
 ```json
