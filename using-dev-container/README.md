@@ -24,7 +24,7 @@ _original_
 },
 ```
 
-1. To server on a different port than 4200. You can get conflicts running multiple Angular apps
+1. You can get conflicts running multiple Angular apps, so I always change the default port from 4200.
 2. poll is to refresh within the devcontainer
    _updated_
 
