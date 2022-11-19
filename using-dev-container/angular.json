@@ -69,9 +69,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+              "port": 12454,
+              "poll": 500,
               "browserTarget": "example-app:build:production"
             },
             "development": {
+              "port": 12453,
+              "poll": 500,
               "browserTarget": "example-app:build:development"
             }
           },
@@ -103,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

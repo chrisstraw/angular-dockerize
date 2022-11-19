@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "start:example-app": "ng serve example-app --configuration development --poll 500",
+    "build:example-app": "ng build example-app --configuration production",
+    "watch:example-app": "ng build --watch --configuration development --poll 500",
     "test": "ng test"
   },
   "private": true,
