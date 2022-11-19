@@ -1,10 +1,10 @@
-# My working example of a Dockerized Angular project using a devcontainer
+## My working example of a Dockerized Angular project using a devcontainer
 
 A post that explains how to setup a devcontainer [post](https://blog.hammelburg.me/developing-angular-apps-inside-a-docker-container-fbca44438e05)
 
 _I typically create my git repo separately, then create my angular app in another directory, then copy it into my git directory_
 
-# Steps to create Angular project
+## Steps to create Angular project
 
 _Note: change the workspace name (i.e., angular-dockerize)_
 
@@ -20,6 +20,7 @@ _Note: change the app name_
 ng g application example-app --routing=true --style=scss
 ```
 
+## Final Adjustments
 After the devcontainer.json is created, you can add your favorite vscode exentions to the devcontainer:
 
 select extension -> gear -> Add to devcontainer.json
