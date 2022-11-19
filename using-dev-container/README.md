@@ -1,7 +1,8 @@
 A post that explains how to setup a devcontainer [post](https://blog.hammelburg.me/developing-angular-apps-inside-a-docker-container-fbca44438e05)
 
-After the devcontainer.json is created:
-To add vscode extensions to the devcontainer, you can select your currently installed extsnsions -> gear -> Add to devcontainer.json
+After the devcontainer.json is created, you can add your favorite vscode exentions to the devcontainer:
+
+select extension -> gear -> Add to devcontainer.json
 ![image](https://user-images.githubusercontent.com/1365728/202858614-05ca7368-3ef2-4594-afa5-a295d434b574.png)
 
 
