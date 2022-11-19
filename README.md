@@ -18,4 +18,4 @@ _Note: change the app name_
 ng g application example-app --routing=true --style=scss
 ```
 
-# [Dev Container Example](./using-dev-container/README.md)
+## [Dev Container Example](./using-dev-container/README.md)
