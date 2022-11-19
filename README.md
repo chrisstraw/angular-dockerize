@@ -1,4 +1,4 @@
-Example of Dockerized Angular project using a devcontainer
+My working examples of a Dockerized Angular project
 
 _I typically create my git repo separately, then create my angular app in another directory, then copy it into my git directory_
 

@@ -1,3 +1,5 @@
+A post that explains how to setup a devcontainer [post](https://blog.hammelburg.me/developing-angular-apps-inside-a-docker-container-fbca44438e05)
+
 Changed angular.json
 _original_
 
