@@ -46,7 +46,7 @@ _original_
 ```
 
 1. You can get conflicts running multiple Angular apps, so I always change the default port from 4200.
-2. poll is to refresh within the devcontainer
+2. poll is required to refresh when a file change is done within the devcontainer [more...](https://github.com/angular/angular-cli/pull/1814#issuecomment-241854816)
 
    _updated_
 
@@ -68,3 +68,4 @@ _original_
   "defaultConfiguration": "development"
 },
 ```
+
