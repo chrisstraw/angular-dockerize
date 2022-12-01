@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build example-app",
     "start:example-app": "ng serve example-app --configuration development",
-    "build:example-app": "ng build example-app --configuration production",
+    "build:example-app": "ng build example-app",
     "watch:example-app": "ng build --watch --configuration development",
+    "build:example-lib": "ng build example-lib",
     "test": "ng test"
   },
   "private": true,
@@ -34,6 +34,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^14.0.0",
     "typescript": "~4.7.2"
   }
 }
