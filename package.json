@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "build": "ng build example-app",
     "start:example-app": "ng serve example-app --configuration development",
     "build:example-app": "ng build example-app --configuration production",
     "watch:example-app": "ng build --watch --configuration development",

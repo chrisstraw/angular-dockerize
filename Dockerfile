@@ -4,10 +4,10 @@
 
 ###### Install dependencies only when needed ######
 FROM node:16-alpine AS builder
-ARG CONFIGURATION='dev'
+ARG CONFIGURATION='production'
 
 # Make /app as working directory
-WORKDIR /app
+WORKDIR /projects/example-app/src/app
 
 # Copy package.json file
 COPY package.json .
@@ -29,10 +29,15 @@ FROM nginx:stable-alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy nginx config file
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+# COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
 
 # Copy dist folder fro build stage to nginx public folder
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /projects/example-app/src/app/dist /usr/share/nginx/html
 
 # Start NgInx service
 CMD ["nginx", "-g", "daemon off;"]
+
+
+# docker image ls
+# docker run -p 5757:80 -d example-app-image:v1.0.0

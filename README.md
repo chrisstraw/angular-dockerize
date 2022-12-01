@@ -21,6 +21,7 @@ ng g application example-app --routing=true --style=scss
 ```
 
 ## Final Adjustments
+
 After the devcontainer.json is created, you can add your favorite vscode exentions to the devcontainer:
 
 select extension -> gear -> Add to devcontainer.json
@@ -69,3 +70,22 @@ _original_
 },
 ```
 
+---
+
+# To Run the Angular App inside Docker
+
+```
+docker build -t example-app-image .
+```
+
+Then to view the docker image
+
+```
+docker image ls
+```
+
+Then create the container
+
+```
+docker run -p 5757:80 -d example-app-image:latest
+```
