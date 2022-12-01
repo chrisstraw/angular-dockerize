@@ -1,6 +1,7 @@
 # https://dev.to/this-is-angular/multi-stage-docker-builds-with-angular-and-nginx-4j9d
 # https://javascript.plainenglish.io/how-to-dockerize-angular-application-3cd67e963832
 # https://dev.to/oneofthedevs/docker-angular-nginx-37e4
+# https://www.marcinlovescode.com/cloud/accessing-azure-npm-feed-from-docker-build -> https://github.com/wkrzywiec/aston-villa-app
 
 ###### Install dependencies only when needed ######
 FROM node:16-alpine AS builder
