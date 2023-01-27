@@ -75,7 +75,13 @@ _original_
 # To Run the Angular App inside Docker
 
 ```
-docker build -t example-app-image .
+docker build -t example-app:latest .
+```
+
+or without tag (default will be latest)
+
+```
+docker build -t example-app .
 ```
 
 Then to view the docker image
