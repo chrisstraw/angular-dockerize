@@ -4,8 +4,10 @@
 
 name: Deploy to ECR
 on:
-  create:
-    branches: [main]
+  push:
+    branches:
+      - "main"
+      - "releases/**"
 
   # workflow_dispatch:
   #   branches:
