@@ -7,16 +7,16 @@ on:
   create:
     branches: [main]
 
-  workflow_dispatch:
+  # workflow_dispatch:
   #   branches:
   #     - master
   #     - feature/**
 
-  pull_request:
-    types: [opened, synchronize, reopened]
+  # pull_request:
+  #   types: [opened, synchronize, reopened]
 
-  tags:
-    - .*
+  # tags:
+  #   - .*
 
 # on:
 #   create:
