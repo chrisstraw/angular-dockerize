@@ -78,14 +78,62 @@ _original_
 docker build -t example-app-image .
 ```
 
-Then to view the docker image
+1. Then to view the docker image
 
 ```
 docker image ls
 ```
 
-Then create the container
+2. Then create the container
 
 ```
 docker run -p 5757:80 -d example-app-image:latest
+```
+
+3. Command example with my image and repository
+
+```
+docker run -p 5757:80 -d example-app-image:latest
+```
+
+### To Manually Push to AWS ECR
+
+_Credit Here: https://plainenglish.io/blog/how-to-push-an-image-to-aws-ecr_
+
+4. Command to tag an image
+
+```
+docker image tag example-app:latest  <aws_account_id>.dkr.ecr.<region>.amazonaws.com/example-app-image:latest
+```
+
+5. Get an ECR credential
+
+```
+aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.<region>.amazonaws.com/example-app-image
+```
+
+6. Push image to ECR repo
+
+```
+docker image push 630597503681.dkr.ecr.us-east-2.amazonaws.com/example-app-image:latest
+```
+
+### To Manually Pull from AWS ECR to Docker
+
+7. Get an ECR credential
+
+```
+aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.<region>.amazonaws.com
+```
+
+8. Pull or Run the latest from AWS ECR
+
+```
+docker pull <aws_account_id>.dkr.ecr.<region>.amazonaws.com/example-app-image:latest
+```
+
+OR
+
+```
+docker run -p 5750:80 -d <aws_account_id>.dkr.ecr.<region>.amazonaws.com/example-app-image:latest
 ```
