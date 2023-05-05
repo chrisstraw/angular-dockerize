@@ -28,7 +28,8 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"vscode-icons-team.vscode-icons",
-		"ms-edgedevtools.vscode-edge-devtools"
+		"ms-edgedevtools.vscode-edge-devtools",
+		"eliostruyf.vscode-typescript-exportallmodules"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
