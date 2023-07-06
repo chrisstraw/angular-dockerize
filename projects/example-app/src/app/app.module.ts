@@ -6,6 +6,7 @@ import { ExampleLibModule } from 'example-lib';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApplicationErrorComponent } from './core/views/application-error/application-error.component';
+import { BreadcrumbsModule } from '@exalif/ngx-breadcrumbs';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ApplicationErrorComponent } from './core/views/application-error/applic
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    BreadcrumbsModule.forRoot(),
     ExampleLibModule
   ],
   providers: [],
